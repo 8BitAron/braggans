@@ -6,9 +6,8 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Greeting
+          name: Node Version
           command: node --version
-          command: npm install --global yarn
       - run:
-          name: Print the Current Time
-          command: date
+          name: Install Yarn
+          command: npm install --global yarn
