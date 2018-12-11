@@ -11,3 +11,13 @@ jobs:
       - run:
           name: Install Yarn
           command: npm install --global yarn
+      - run: 
+          name: yarn
+          command: yarn
+      - run: 
+          name: test
+          command: yarn test
+      - run: 
+          name: build
+          command: yarn build
+      
