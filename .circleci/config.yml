@@ -2,12 +2,13 @@ version: 2
 jobs:
   build:
     docker:
-      - image: debian:stretch
+      - image: mhart/alpine-node:10
     steps:
       - checkout
       - run:
           name: Greeting
-          command: yarn 
+          command: node --version
+          command: npm install --global yarn
       - run:
           name: Print the Current Time
           command: date
