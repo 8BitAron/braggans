@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: node:10
+      - image: node:10-alpine
     working_directory: ~/build
     steps:
       - checkout
@@ -24,9 +24,19 @@ jobs:
 
   deploy:
     docker:
-     - image: circleci/python:2.7-jessie
+     - image: node:10-alpine
     working_directory: ~/build
     steps:
+      - checkout
+      - run:
+          name: Install Yarn
+          command: npm install --global yarn
+      - run: 
+          name: yarn
+          command: yarn
+      - run: 
+          name: build
+          command: yarn build
       - run:
           name: Install Aws
           command: sudo pip install awscli
