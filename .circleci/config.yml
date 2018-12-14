@@ -39,7 +39,7 @@ jobs:
           command: yarn build
       - run:
           name: Install Aws
-          command: sudo pip install awscli
+          command: /usr/bin/sudo pip install awscli
       - run:
           name: Deploy to S3
           command: aws s3 sync ~/build/build s3://braggans.com --delete
