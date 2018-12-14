@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:10
+      - image: noxan/docker-node-awscli-yarn
     working_directory: ~/test
     steps:
       - checkout
@@ -20,7 +20,7 @@ jobs:
           command: yarn test
   deploy:
     docker:
-     - image: circleci/node:10
+     - image: noxan/docker-node-awscli-yarn
     working_directory: ~/build
     steps:
      - checkout
