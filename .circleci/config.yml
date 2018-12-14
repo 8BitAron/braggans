@@ -28,3 +28,4 @@ version: 2
                 - run:
                     name: Install awscli
                     command: sudo pip install awscli
+                    
