@@ -19,19 +19,20 @@ jobs:
           name: test
           command: yarn test
       - run: 
-        name: build
-        command: yarn build
+          name: build
+          command: yarn build
+
   deploy:
     docker:
      - image: circleci/python:2.7-jessie
     working_directory: ~/build
     steps:
-     - run:
+      - run:
         name: Install Aws
         command: sudo pip install awscli
-     - run:
-          name: Deploy to S3
-          command: aws s3 sync build s3://braggans.com --delete
+      - run:
+        name: Deploy to S3
+        command: aws s3 sync build s3://braggans.com --delete
 
 workflows:
   version: 2
