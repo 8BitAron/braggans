@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: aws/codebuild/nodejs:10.14.1
+      - image: circleci/node:10
     steps:
       - checkout
       - run:
@@ -19,12 +19,15 @@ jobs:
           command: yarn test
   deploy:
     docker:
-     - image: aws/codebuild/nodejs:10.14.1
+     - image: circleci/node:10
     steps:
      - checkout
      - run: 
         name: build
         command: yarn build
+     - run:
+        name: Install Aws
+        command: sudo pip install awscli
 
 workflows:
   version: 2
