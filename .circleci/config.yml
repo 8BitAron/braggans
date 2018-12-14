@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: node:10
+      - image: aws/codebuild/nodejs:10.14.1
     steps:
       - checkout
       - run:
@@ -19,7 +19,7 @@ jobs:
           command: yarn test
   deploy:
     docker:
-     - image: circleci/python:2.7-jessie
+     - image: aws/codebuild/nodejs:10.14.1
     steps:
      - checkout
      - run: 
