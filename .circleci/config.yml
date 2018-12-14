@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: node:10-alpine
+      - image: node:10-jessie
     working_directory: ~/build
     steps:
       - checkout
@@ -24,7 +24,7 @@ jobs:
 
   deploy:
     docker:
-     - image: node:10-alpine
+     - image: node:10-jessie
     working_directory: ~/build
     steps:
       - checkout
