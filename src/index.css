@@ -6,7 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}s
+}
 
 .app {
   display: flex;
@@ -17,4 +17,5 @@ body {
   height: 100vh;
   background-color: blueviolet;
   color: purple;
+
 }
