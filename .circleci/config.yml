@@ -37,6 +37,9 @@ jobs:
       - run:
           name: Deploy to S3
           command: aws s3 sync ~/build/build s3://braggans.com --delete
+      - run:
+          name: CloudFront 
+          command: aws cloudfront create-invalidation --distribution-id $AWS_CF_DISTRIBUTION_ID --paths "/*"
 
 workflows:
   version: 2
