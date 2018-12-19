@@ -45,10 +45,10 @@ const Blue = styled.span`
   color: #080aef;
   font-size: 50px;
 `
-const Gray = styled.span`
-  color: #f3f3f0;
-  font-size: 50px;
-`
+// const Gray = styled.span`
+//   color: #f3f3f0;
+//   font-size: 50px;
+// `
 const Black = styled.span`
   color: #222222;
   font-size: 50px;
