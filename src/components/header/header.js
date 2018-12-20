@@ -7,6 +7,13 @@ export default class Header extends Component {
     return (
       <Wrapper>
         <Links>
+          <Link href="https://twitter.com/8bitaron">
+            <FontAwesomeIcon
+              icon={['fab', 'twitter-square']}
+              style={{ marginRight: 5 }}
+            />
+            Twitter
+          </Link>
           <Link href="https://github.com/8bitaron">
             <FontAwesomeIcon
               icon={['fab', 'github-square']}
@@ -27,7 +34,7 @@ export default class Header extends Component {
           <Black> > </Black>
           <Blue>Ride</Blue>
           <Black> > </Black>
-          <Orange>Work</Orange>
+          <Orange>Code</Orange>
         </Navbar>
       </Wrapper>
     )
@@ -51,6 +58,12 @@ const Link = styled.a`
   font-size: 14px;
   font-weight: 700;
   &:hover {
+    color: #080aef;
+  }
+  &:hover:first-child {
+    color: #8a07bd;
+  }
+  &:hover:last-child {
     color: #f56407;
   }
 `

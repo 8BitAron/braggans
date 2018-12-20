@@ -2,17 +2,13 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 
 import Header from '../components/header/header'
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-
-library.add(faGithubSquare, faLinkedin)
 
 class App extends Component {
   render() {
     return (
       <div>
         <Header />
-        <Content />
+        <Content>Comming Soon...</Content>
       </div>
     )
   }
