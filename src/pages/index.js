@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 
-import Header from '../components/header/header'
+import Header from '../organisms/header/header'
 
 class App extends Component {
   render() {

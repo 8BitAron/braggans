@@ -1,7 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.scss'
-import App from './components/App'
+import App from './pages/index'
+
 import * as serviceWorker from './serviceWorker'
 
 //TODO: Move To an init file
