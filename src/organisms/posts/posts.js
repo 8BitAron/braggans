@@ -10,7 +10,7 @@ class Posts extends Component {
     return (
       <Postss>
         {this.state.posts.map(idx => {
-          return <Post />
+          return <Post key={idx} />
         })}
       </Postss>
     )
@@ -22,5 +22,7 @@ export default Posts
 const Postss = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  > * {
+    padding-bottom: 20px;
+  }
 `
