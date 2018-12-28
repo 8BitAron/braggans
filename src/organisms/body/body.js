@@ -5,11 +5,7 @@ import Posts from '../posts/posts'
 
 class Body extends Component {
   render() {
-    return (
-      <Content>
-        <Posts />
-      </Content>
-    )
+    return <Content>Comming soon...</Content>
   }
 }
 
