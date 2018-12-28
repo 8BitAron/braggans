@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 
-import Posts from '../posts/posts'
-
 class Body extends Component {
   render() {
     return <Content>Comming soon...</Content>
