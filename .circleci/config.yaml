@@ -24,7 +24,7 @@ jobs:
       - checkout
       - run: 
           name: yarn
-          command: yarn
+          command: yarn 
       - run: 
           name: build
           command: yarn build
@@ -37,7 +37,7 @@ jobs:
       - run:
           name: CloudFront 
           command: aws cloudfront create-invalidation --distribution-id $AWS_CF_DISTRIBUTION_ID --paths "/*"
-          
+
   develop:
         docker:
         - image: nikolaik/python-nodejs:latest
