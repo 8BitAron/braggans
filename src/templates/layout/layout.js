@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import '@fortawesome/fontawesome/styles.css'
+import '@fortawesome/fontawesome-svg-core/styles.css'
 
 import { library, config } from '@fortawesome/fontawesome-svg-core'
 import Header from '../../organisms/header/header'
