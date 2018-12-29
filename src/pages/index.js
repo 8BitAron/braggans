@@ -4,6 +4,6 @@ import Layout from '../templates/layout/layout'
 
 export default () => (
   <Layout>
-    <p>Comming soon...</p>
+    <p>Coming soon...</p>
   </Layout>
 )

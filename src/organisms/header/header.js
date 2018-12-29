@@ -1,14 +1,34 @@
 import React, { PureComponent } from 'react'
 import styled from 'styled-components'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 class header extends PureComponent {
   render() {
     return (
       <Wrapper>
         <Links>
-          <Link href="https://twitter.com/8bitaron">Twitter</Link>
-          <Link href="https://github.com/8bitaron">GitHub</Link>
-          <Link href="https://www.linkedin.com/in/aronbraggans/">Linkedin</Link>
+          <Link href="https://twitter.com/8bitaron">
+            <FontAwesomeIcon
+              icon={['fab', 'twitter-square']}
+              style={{ marginRight: 5 }}
+            />
+            Twitter
+          </Link>
+          <Link href="https://github.com/8bitaron">
+            <FontAwesomeIcon
+              icon={['fab', 'github-square']}
+              style={{ marginRight: 5 }}
+            />
+            GitHub
+          </Link>
+          <Link href="https://www.linkedin.com/in/aronbraggans/">
+            <FontAwesomeIcon
+              icon={['fab', 'linkedin']}
+              style={{ marginRight: 5 }}
+            />
+            Linkedin
+          </Link>
         </Links>
         <Navbar>
           <Purple>Live</Purple>
@@ -40,6 +60,7 @@ const Link = styled.a`
   padding: 0px 10px 0px 0px;
   font-size: 14px;
   font-weight: 700;
+  text-decoration: none;
   &:hover {
     color: #080aef;
   }
@@ -50,7 +71,6 @@ const Link = styled.a`
     color: #f56407;
   }
 `
-
 const Navbar = styled.nav`
   display: flex;
   flex-direction: row;
