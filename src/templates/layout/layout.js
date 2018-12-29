@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import '@fortawesome/fontawesome/styles.css'
+
 import { library, config } from '@fortawesome/fontawesome-svg-core'
 import Header from '../../organisms/header/header'
 import Footer from '../../organisms/footer/footer'
@@ -10,7 +12,7 @@ import {
   faTwitterSquare
 } from '@fortawesome/free-brands-svg-icons'
 
-config.autoAddCss = true
+config.autoAddCss = false
 
 library.add(faGithubSquare, faLinkedin, faTwitterSquare)
 
