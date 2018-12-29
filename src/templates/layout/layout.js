@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { library } from '@fortawesome/fontawesome-svg-core'
+import { library, config } from '@fortawesome/fontawesome-svg-core'
 import Header from '../../organisms/header/header'
 import Footer from '../../organisms/footer/footer'
 import {
@@ -11,6 +11,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 
 library.add(faGithubSquare, faLinkedin, faTwitterSquare)
+config.autoAddCss = true
 
 export default ({ children }) => (
   <Container>
