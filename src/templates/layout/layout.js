@@ -10,8 +10,9 @@ import {
   faTwitterSquare
 } from '@fortawesome/free-brands-svg-icons'
 
-library.add(faGithubSquare, faLinkedin, faTwitterSquare)
 config.autoAddCss = true
+
+library.add(faGithubSquare, faLinkedin, faTwitterSquare)
 
 export default ({ children }) => (
   <Container>
