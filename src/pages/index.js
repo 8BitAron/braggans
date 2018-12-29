@@ -1,19 +1,9 @@
-import React, { Component } from 'react'
+import React from 'react'
+import '../styles/styles.css'
+import Layout from '../templates/layout/layout'
 
-import Header from '../organisms/header/header'
-import Body from '../organisms/body/body'
-import Footer from '../organisms/footer/footer'
-
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <Header />
-        <Body />
-        <Footer />
-      </div>
-    )
-  }
-}
-
-export default App
+export default () => (
+  <Layout>
+    <p>Coming soon...</p>
+  </Layout>
+)

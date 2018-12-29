@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import moment from 'moment'
 
 import styled from 'styled-components'
 
-class Footer extends Component {
+class Footer extends PureComponent {
   render() {
     return <Foot>Copyright 1977-{moment().format('YYYY')}</Foot>
   }

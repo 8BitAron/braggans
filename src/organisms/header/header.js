@@ -1,8 +1,9 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import styled from 'styled-components'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-export default class Header extends Component {
+class header extends PureComponent {
   render() {
     return (
       <Wrapper>
@@ -41,6 +42,8 @@ export default class Header extends Component {
   }
 }
 
+export default header
+
 const Wrapper = styled.header``
 
 const Links = styled.div`
@@ -57,6 +60,7 @@ const Link = styled.a`
   padding: 0px 10px 0px 0px;
   font-size: 14px;
   font-weight: 700;
+  text-decoration: none;
   &:hover {
     color: #080aef;
   }
@@ -67,7 +71,6 @@ const Link = styled.a`
     color: #f56407;
   }
 `
-
 const Navbar = styled.nav`
   display: flex;
   flex-direction: row;
