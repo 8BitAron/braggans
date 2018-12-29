@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 class Body extends Component {
   render() {
-    return <Content>Comming soon...</Content>
+    return <Content>Coming soon...</Content>
   }
 }
 
