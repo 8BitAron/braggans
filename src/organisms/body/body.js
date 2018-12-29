@@ -11,6 +11,7 @@ export default Body
 
 const Content = styled.div`
   display: flex;
+  flex: 1;
   justify-content: center;
   align-content: center;
   height: calc(100vh - 105px);
