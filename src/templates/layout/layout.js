@@ -1,7 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { library } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+
+import { library, config } from '@fortawesome/fontawesome-svg-core'
 import Header from '../../organisms/header/header'
 import Footer from '../../organisms/footer/footer'
 import {
@@ -9,6 +11,8 @@ import {
   faLinkedin,
   faTwitterSquare
 } from '@fortawesome/free-brands-svg-icons'
+
+config.autoAddCss = false
 
 library.add(faGithubSquare, faLinkedin, faTwitterSquare)
 
@@ -24,10 +28,9 @@ const Container = styled.div``
 
 const Body = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
   height: calc(100vh - 105px);
   background-color: #ffffff;
   padding: 20px 20px 20px 20px;
+  margin: 0 auto 0;
+  max-width: 800px;
 `

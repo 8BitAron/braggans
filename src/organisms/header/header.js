@@ -12,6 +12,7 @@ class header extends PureComponent {
             <FontAwesomeIcon
               icon={['fab', 'twitter-square']}
               style={{ marginRight: 5 }}
+              size="1x"
             />
             Twitter
           </Link>
@@ -19,6 +20,7 @@ class header extends PureComponent {
             <FontAwesomeIcon
               icon={['fab', 'github-square']}
               style={{ marginRight: 5 }}
+              size="1x"
             />
             GitHub
           </Link>
@@ -26,6 +28,7 @@ class header extends PureComponent {
             <FontAwesomeIcon
               icon={['fab', 'linkedin']}
               style={{ marginRight: 5 }}
+              size="1x"
             />
             Linkedin
           </Link>
