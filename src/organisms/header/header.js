@@ -34,11 +34,13 @@ class header extends PureComponent {
           </Link>
         </Links>
         <Navbar>
-          <Purple>Live</Purple>
-          <Black> > </Black>
-          <Blue>Ride</Blue>
-          <Black> > </Black>
-          <Orange>Code</Orange>
+          <HomeLink href="/">
+            <Purple>Live</Purple>
+            <Black> > </Black>
+            <Blue>Ride</Blue>
+            <Black> > </Black>
+            <Orange>Code</Orange>
+          </HomeLink>
         </Navbar>
       </Wrapper>
     )
@@ -48,6 +50,10 @@ class header extends PureComponent {
 export default header
 
 const Wrapper = styled.header``
+
+const HomeLink = styled.a`
+  text-decoration: none;
+`
 
 const Links = styled.div`
   display: flex;
