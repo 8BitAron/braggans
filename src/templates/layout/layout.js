@@ -28,9 +28,10 @@ const Container = styled.div``
 
 const Body = styled.div`
   display: flex;
-  height: calc(100vh - 105px);
+  flex: 1;
   background-color: #ffffff;
   padding: 20px 20px 20px 20px;
   margin: 0 auto 0;
+  min-height: calc(100vh - 105px);
   max-width: 800px;
 `
