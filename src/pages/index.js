@@ -4,6 +4,7 @@ import '../styles/styles.css'
 import { Link, graphql } from 'gatsby'
 
 import Layout from '../templates/layout/layout'
+import Calendar from '../organisms/ride/calendar'
 
 export default ({ data }) => {
   return (
@@ -21,7 +22,9 @@ export default ({ data }) => {
           </div>
         ))}
       </div>
-      <div />
+      <div>
+        <Calendar />
+      </div>
     </Layout>
   )
 }

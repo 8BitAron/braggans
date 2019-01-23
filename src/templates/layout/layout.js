@@ -28,10 +28,18 @@ const Container = styled.div``
 
 const Body = styled.div`
   display: flex;
+  flex-direction: column;
   flex: 1;
   background-color: #ffffff;
   padding: 20px 20px 20px 20px;
   margin: 0 auto 0;
   min-height: calc(100vh - 105px);
-  max-width: 800px;
+  max-width: calc(100vw - 100px);
+  > div {
+    margin: 25px;
+  }
+
+  @media (min-width: 1023px) {
+    flex-direction: row;
+  }
 `
