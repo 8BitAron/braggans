@@ -1,5 +1,5 @@
 ---
-title: "Greetings Travelers"
+title: "Greetings Traveler"
 date: "2019-01-01"
 ---
 
